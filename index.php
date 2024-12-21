@@ -11,6 +11,7 @@ require_once "./vendor/autoload.php";
 $router = new Router();
 
 $router->get('' , "Homecontroller@index")->middleware([CSRFMiddleware::class]);
+$router->get('' , "Homecontroller@index")->middleware([CSRFMiddleware::class]);
 
 
 $router->dispatch();
